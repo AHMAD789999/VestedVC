@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
-import { FaTwitter, FaLinkedin, FaDiscord, FaArrowUp, FaRegLightbulb } from "react-icons/fa";
+import { FaTwitter, FaGlobe, FaLinkedin, FaDiscord, FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden  mx-auto backdrop-blur-xl bg-white text-black   shadow-lg z-50 border border-slate-700n pt-20 pb-10 text-xl">
+    <footer className="relative overflow-hidden mx-auto backdrop-blur-xl bg-white text-black shadow-lg z-50 border border-slate-700n pt-20 pb-10 text-xl">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-blue-900/10 blur-3xl"></div>
@@ -18,9 +18,9 @@ const Footer = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Main grid - Asymmetrical layout */}
+        {/* Main grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr_1.5fr] gap-12">
-          {/* Brand column - Left */}
+          {/* Brand column */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -28,31 +28,47 @@ const Footer = () => {
             className="space-y-6"
           >
             <motion.div whileHover={{ scale: 1.05 }} className="flex relative top-[-20px] justify-center items-center">
-                    <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
-               <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
-             <span className="text-[#1E40AF]">Vested</span>
-             <span className="text-[#06B6D4]">V</span>
-             <span className="text-[#cca647e3]">C</span>
-           </h1>
-           
-           
-                     {/* <span className="text-xl font-bold text-black font-['Clash_Display']">VestedVC</span> */}
-                   </motion.div>
-            
+              <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
+              <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
+                <span className="text-[#1E40AF]">Vested</span>
+                <span className="text-[#06B6D4]">V</span>
+                <span className="text-[#cca647e3]">C</span>
+              </h1>
+            </motion.div>
+
             <p className="text-black text-sm font-bold leading-relaxed max-w-md">
               We back bold founders building the future through visionary capital and unparalleled network effects.
             </p>
-            
-            {/* Social links with hover glow */}
+
+            {/* Updated Social icons with links */}
             <div className="flex gap-4">
               {[
-                { icon: <FaTwitter className="text-lg" />, color: "bg-blue-400 text-white hover:bg-blue-400/20" },
-                { icon: <FaLinkedin className="text-lg" />, color: "bg-blue-500 text-white hover:bg-blue-500/20" },
-                { icon: <FaDiscord className="text-lg" />, color: "bg-purple-500 text-white hover:bg-purple-500/20" },
+                {
+                  icon: <FaTwitter className="text-lg" />,
+                  color: "bg-blue-400 text-white hover:bg-blue-400/20",
+                  link: "https://twitter.com/",
+                },
+                {
+                  icon: <FaLinkedin className="text-lg" />,
+                  color: "bg-blue-500 text-white hover:bg-blue-500/20",
+                  link: "https://linkedin.com/",
+                },
+                {
+                  icon: <FaDiscord className="text-lg" />,
+                  color: "bg-purple-500 text-white hover:bg-purple-500/20",
+                  link: "https://discord.com/",
+                },
+                {
+                  icon: <FaGlobe className="text-lg text-white hover:text-blue-400" />,
+                  color: "bg-purple-600 text-white hover:bg-purple-500/20",
+                  link: "https://www.crunchbase.com/",
+                },
               ].map((item, index) => (
                 <motion.a
                   key={index}
-                  href="#"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ y: -4 }}
                   whileTap={{ scale: 0.9 }}
                   className={`w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-sm border border-slate-800 ${item.color} transition-all duration-300`}
@@ -63,7 +79,7 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Navigation - Center */}
+          {/* Navigation */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +105,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Legal - Center */}
+          {/* Legal */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -115,7 +131,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* CTA - Right */}
+          {/* CTA */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -128,11 +144,8 @@ const Footer = () => {
             <p className="text-black text-xl font-bold">
               Ready to build something extraordinary?
             </p>
-            
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="relative group"
-            >
+
+            <motion.div whileHover={{ scale: 1.02 }} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
               <button className="relative w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-6 py-3 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 text-sm font-medium">
                 Submit Pitch <FaArrowUp className="rotate-45" />
@@ -147,7 +160,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        {/* Bottom divider with animated gradient */}
+        {/* Bottom divider */}
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -157,7 +170,7 @@ const Footer = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/40 to-transparent"></div>
         </motion.div>
 
-        {/* Bottom footer */}
+        {/* Footer bottom row */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.p
             initial={{ opacity: 0 }}
