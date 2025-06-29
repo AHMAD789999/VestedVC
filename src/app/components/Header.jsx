@@ -19,17 +19,17 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-4 left-1/2 rounded-2xl transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-slate-600 md:rounded-4xl shadow-lg z-100 border border-slate-700"
+      className="fixed top-4 left-1/2 rounded-2xl transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-slate-800 md:rounded-4xl shadow-lg z-100 border border-slate-600"
     >
-      <div className="flex items-center justify-between px-6 pyS-3">
+      <div className="flex items-center justify-between px-6 py-4">
         {/* Logo (Left) */}
         <motion.div whileHover={{ scale: 1.05 }} className="">
          <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
-    {/* <h1 className="text-4xl font-bold mt-4 tracking-wide">
+    <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
   <span className="text-[#1E40AF]">Vested</span>
   <span className="text-[#06B6D4]">V</span>
   <span className="text-[#cca647e3]">C</span>
-</h1> */}
+</h1>
 
 
           {/* <span className="text-xl font-bold text-white font-['Clash_Display']">VestedVC</span> */}
