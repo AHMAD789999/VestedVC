@@ -58,11 +58,19 @@ const Footer = () => {
                   color: "bg-purple-500 text-white hover:bg-purple-500/20",
                   link: "https://discord.com/",
                 },
-                {
-                  icon: <FaGlobe className="text-lg text-white hover:text-blue-400" />,
-                  color: "bg-purple-600 text-white hover:bg-purple-500/20",
-                  link: "https://www.crunchbase.com/",
-                },
+              {
+    icon: (
+      <Image
+        src="/cb.jpg"
+        alt="Crunchbase"
+        width={34}
+        height={34}
+        className="rounded-full object-cover"
+      />
+    ),
+    color: "text-white hover:bg-purple-500/20",
+    link: "https://www.crunchbase.com/",
+  },
               ].map((item, index) => (
                 <motion.a
                   key={index}
