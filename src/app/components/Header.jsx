@@ -1,8 +1,10 @@
 'use client'
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTwitter, FaLinkedin, FaGithub, FaTimes, FaBars } from "react-icons/fa";
 import Image from "next/image";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,6 +14,35 @@ const Header = () => {
     "Portfolio",
     "Founders Hub",
     "Explore Perks",
+  ];
+
+  // ✅ Social links (including image icon)
+  const socialLinks = [
+    {
+      icon: <FaTwitter />,
+      link: "https://twitter.com/",
+    },
+    {
+      icon: <FaLinkedin />,
+      link: "https://linkedin.com/",
+    },
+    {
+      icon: <FaGithub />,
+      link: "https://github.com/",
+    },
+    {
+       icon: (
+         <Image
+           src="/cb.jpg"
+           alt="Crunchbase"
+           width={34}
+           height={34}
+           className="rounded-full object-cover"
+         />
+       ),
+       color: "text-white hover:bg-purple-500/20",
+       link: "https://www.crunchbase.com/",
+     },
   ];
 
   return (
@@ -24,15 +55,12 @@ const Header = () => {
       <div className="flex items-center justify-between px-6 py-4">
         {/* Logo (Left) */}
         <motion.div whileHover={{ scale: 1.05 }} className="flex relative top-[-10px] justify-center items-center">
-         <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
-    <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
-  <span className="text-[#1E40AF]">Vested</span>
-  <span className="text-[#06B6D4]">V</span>
-  <span className="text-[#cca647e3]">C</span>
-</h1>
-
-
-          {/* <span className="text-xl font-bold text-black font-['Clash_Display']">VestedVC</span> */}
+          <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
+          <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
+            <span className="text-[#1E40AF]">Vested</span>
+            <span className="text-[#06B6D4]">V</span>
+            <span className="text-[#cca647e3]">C</span>
+          </h1>
         </motion.div>
 
         {/* Pages (Center - Desktop) */}
@@ -84,14 +112,16 @@ const Header = () => {
 
         {/* Social Icons (Right - Desktop) */}
         <div className="hidden md:flex items-center space-x-4">
-          {[<FaTwitter />, <FaLinkedin />, <FaGithub />].map((Icon, index) => (
+          {socialLinks.map((item, index) => (
             <motion.a
               key={index}
-              href="#"
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ y: -2, scale: 1.2 }}
-              className="text-blue-500 text-xl hover:text-amber-300 transition-colors"
+              className="text-blue-500 text-xl hover:text-amber-300 transition-colors w-8 h-8 flex items-center justify-center"
             >
-              {Icon}
+              {item.icon}
             </motion.a>
           ))}
         </div>
@@ -127,6 +157,7 @@ const Header = () => {
                   {item}
                 </motion.a>
               ))}
+
               <motion.div
                 animate={{
                   borderColor: ["#3B82F6", "#60A5FA", "#3B82F6"],
@@ -160,15 +191,19 @@ const Header = () => {
                   Pitch Us <span>💡</span>
                 </motion.button>
               </motion.div>
+
+              {/* Mobile Social Icons */}
               <div className="flex justify-center space-x-6 pt-4">
-                {[<FaTwitter />, <FaLinkedin />, <FaGithub />].map((Icon, index) => (
+                {socialLinks.map((item, index) => (
                   <motion.a
                     key={index}
-                    href="#"
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ y: -2, scale: 1.2 }}
-                    className="text-black text-2xl hover:text-blue-400 transition-colors"
+                    className="text-black text-2xl hover:text-blue-400 transition-colors w-8 h-8 flex items-center justify-center"
                   >
-                    {Icon}
+                    {item.icon}
                   </motion.a>
                 ))}
               </div>
