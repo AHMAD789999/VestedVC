@@ -23,7 +23,7 @@ const Header = () => {
     >
       <div className="flex items-center justify-between px-6 py-4">
         {/* Logo (Left) */}
-        <motion.div whileHover={{ scale: 1.05 }} className="">
+        <motion.div whileHover={{ scale: 1.05 }} className="flex justify-center items-center">
          <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
     <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
   <span className="text-[#1E40AF]">Vested</span>
