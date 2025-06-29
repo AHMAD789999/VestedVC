@@ -21,7 +21,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className="fixed top-4 left-1/2 rounded-2xl transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-slate-600 md:rounded-4xl shadow-lg z-100 border border-slate-700"
     >
-      <div className="flex items-center justify-between px-6 ">
+      <div className="flex items-center justify-between px-6 pyS-3">
         {/* Logo (Left) */}
         <motion.div whileHover={{ scale: 1.05 }} className="">
          <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
@@ -100,7 +100,7 @@ const Header = () => {
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
           whileTap={{ scale: 0.9 }}
-          className="md:hidden text-white text-2xl focus:outline-none"
+          className="md:hidden text-white text-2xl mt-4 focus:outline-none"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </motion.button>
