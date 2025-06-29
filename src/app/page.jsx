@@ -18,7 +18,7 @@ const HeroSection = () => {
 
   return (
    <>
-    <section className="h-screen mt-[50px] w-full bg-slate-900 text-white flex items-center justify-center px-6">
+    <section className="h-screen pt-[70px] w-full bg-slate-900 text-white flex items-center justify-center px-6">
       <div className="text-center">
         {/* Top Heading */}
         <motion.h1
