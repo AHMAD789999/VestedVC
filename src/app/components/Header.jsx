@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTwitter, FaLinkedin, FaGithub, FaTimes, FaBars } from "react-icons/fa";
-
+import Image from "next/image";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,8 +23,16 @@ const Header = () => {
     >
       <div className="flex items-center justify-between px-6 py-3">
         {/* Logo (Left) */}
-        <motion.div whileHover={{ scale: 1.05 }}>
-          <span className="text-xl font-bold text-white font-['Clash_Display']">VestedVC</span>
+        <motion.div whileHover={{ scale: 1.05 }} className="flex justify-center items-center">
+         <Image src="/logo.png" width={100} height={100} alt="VestedVC Logo" />
+    <h1 className="text-4xl font-bold mt-4 tracking-wide">
+  <span className="text-[#1E40AF]">Vested</span>
+  <span className="text-[#06B6D4]">V</span>
+  <span className="text-[#cca647e3]">C</span>
+</h1>
+
+
+          {/* <span className="text-xl font-bold text-white font-['Clash_Display']">VestedVC</span> */}
         </motion.div>
 
         {/* Pages (Center - Desktop) */}
