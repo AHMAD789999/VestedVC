@@ -19,7 +19,7 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-4 left-1/2 rounded-2xl transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-slate-700 md:rounded-4xl shadow-lg z-100 border border-slate-600"
+      className="fixed top-4 left-1/2 rounded-2xl text-black transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-white md:rounded-4xl shadow-lg z-100 border border-slate-600"
     >
       <div className="flex items-center justify-between px-6 py-4">
         {/* Logo (Left) */}
@@ -32,7 +32,7 @@ const Header = () => {
 </h1>
 
 
-          {/* <span className="text-xl font-bold text-white font-['Clash_Display']">VestedVC</span> */}
+          {/* <span className="text-xl font-bold text-black font-['Clash_Display']">VestedVC</span> */}
         </motion.div>
 
         {/* Pages (Center - Desktop) */}
@@ -42,7 +42,7 @@ const Header = () => {
               key={item}
               href="#"
               whileHover={{ scale: 1.05, color: "#3B82F6" }}
-              className="text-white hover:text-blue-400 transition-colors font-['Clash_Display']"
+              className="text-black hover:text-blue-400 transition-colors font-['Clash_Display']"
             >
               {item}
             </motion.a>
@@ -75,7 +75,7 @@ const Header = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md flex items-center gap-1 transition-all font-['Clash_Display']"
+              className="bg-blue-600 hover:bg-blue-700 text-black px-4 py-2 rounded-md flex items-center gap-1 transition-all font-['Clash_Display']"
             >
               Pitch Us <span>💡</span>
             </motion.button>
@@ -89,7 +89,7 @@ const Header = () => {
               key={index}
               href="#"
               whileHover={{ y: -2, scale: 1.2 }}
-              className="text-white text-xl hover:text-blue-400 transition-colors"
+              className="text-black text-xl hover:text-blue-400 transition-colors"
             >
               {Icon}
             </motion.a>
@@ -100,7 +100,7 @@ const Header = () => {
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
           whileTap={{ scale: 0.9 }}
-          className="md:hidden text-white text-2xl mt-4 focus:outline-none"
+          className="md:hidden text-black text-2xl mt-4 focus:outline-none"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </motion.button>
@@ -122,7 +122,7 @@ const Header = () => {
                   key={item}
                   href="#"
                   whileHover={{ x: 5, color: "#3B82F6" }}
-                  className="block text-white hover:text-blue-400 text-lg transition-colors font-['Clash_Display']"
+                  className="block text-black hover:text-blue-400 text-lg transition-colors font-['Clash_Display']"
                 >
                   {item}
                 </motion.a>
@@ -155,7 +155,7 @@ const Header = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="w-full bg-blue-600 text-white px-4 py-2 rounded-md flex items-center justify-center gap-1 font-['Clash_Display']"
+                  className="w-full bg-blue-600 text-black px-4 py-2 rounded-md flex items-center justify-center gap-1 font-['Clash_Display']"
                 >
                   Pitch Us <span>💡</span>
                 </motion.button>
@@ -166,7 +166,7 @@ const Header = () => {
                     key={index}
                     href="#"
                     whileHover={{ y: -2, scale: 1.2 }}
-                    className="text-white text-2xl hover:text-blue-400 transition-colors"
+                    className="text-black text-2xl hover:text-blue-400 transition-colors"
                   >
                     {Icon}
                   </motion.a>
