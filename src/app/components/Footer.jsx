@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
-import { FaTwitter, FaGlobe, FaLinkedin, FaDiscord, FaArrowUp } from "react-icons/fa";
+import { FaTwitter, FaGlobe, FaLinkedin,FaInstagram,  FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
 
 const Footer = () => {
@@ -54,7 +54,7 @@ const Footer = () => {
                   link: "https://linkedin.com/",
                 },
                 {
-                  icon: <FaDiscord className="text-lg" />,
+                  icon: <FaInstagram className="text-lg" />,
                   color: "bg-purple-500 text-white hover:bg-purple-500/20",
                   link: "https://discord.com/",
                 },

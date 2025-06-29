@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaTwitter, FaLinkedin, FaGithub, FaTimes, FaBars } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaInstagram  , FaGithub, FaTimes, FaBars } from "react-icons/fa";
 import Image from "next/image";
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
       link: "https://linkedin.com/",
     },
     {
-      icon: <FaGithub />,
+      icon: <FaInstagram />,
       link: "https://github.com/",
     },
     {
