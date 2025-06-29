@@ -69,7 +69,7 @@ function HoverCard({ member, onReadMore }) {
       <div
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className={`absolute top-48 left-1/2 transform -translate-x-1/2 bg-white px-4 py-3 rounded-lg shadow-lg w-[90%] text-left transition-all duration-500 ${
+        className={`absolute top-25  md:top-48 left-1/2 transform -translate-x-1/2 bg-white px-4 py-3 rounded-lg shadow-lg w-[90%] text-left transition-all duration-500 ${
           hovered ? "h-44" : "h-20"
         }`}
       >
