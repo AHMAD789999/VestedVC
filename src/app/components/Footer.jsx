@@ -28,17 +28,18 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <motion.div 
-              whileHover={{ scale: 1.02 }}
-              className="flex items-center gap-3"
-            >
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                <FaRegLightbulb className="text-white text-lg" />
-              </div>
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                VestedVC
-              </h2>
-            </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} className="flex justify-center items-center">
+              <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
+         <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
+       <span className="text-[#1E40AF]">Vested</span>
+       <span className="text-[#06B6D4]">V</span>
+       <span className="text-[#cca647e3]">C</span>
+     </h1>
+     
+     
+               {/* <span className="text-xl font-bold text-white font-['Clash_Display']">VestedVC</span> */}
+             </motion.div>
+     
             
             <p className="text-slate-400/80 text-sm leading-relaxed max-w-md">
               We back bold founders building the future through visionary capital and unparalleled network effects.
