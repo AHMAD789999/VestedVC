@@ -23,7 +23,7 @@ const Header = () => {
     >
       <div className="flex items-center justify-between px-6 py-4">
         {/* Logo (Left) */}
-        <motion.div whileHover={{ scale: 1.05 }} className="flex justify-center items-center">
+        <motion.div whileHover={{ scale: 1.05 }} className="flex relative top-[-10px] justify-center items-center">
          <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
     <h1 className="md:text-4xl text-2xl font-bold mt-4 tracking-wide">
   <span className="text-[#1E40AF]">Vested</span>
@@ -75,7 +75,7 @@ const Header = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="bg-blue-600 hover:bg-blue-700 text-black px-4 py-2 rounded-md flex items-center gap-1 transition-all font-['Clash_Display']"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md flex items-center gap-1 transition-all font-['Clash_Display']"
             >
               Pitch Us <span>💡</span>
             </motion.button>
@@ -89,7 +89,7 @@ const Header = () => {
               key={index}
               href="#"
               whileHover={{ y: -2, scale: 1.2 }}
-              className="text-black text-xl hover:text-blue-400 transition-colors"
+              className="text-blue-500 text-xl hover:text-amber-300 transition-colors"
             >
               {Icon}
             </motion.a>
