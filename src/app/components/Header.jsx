@@ -19,7 +19,7 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-4 left-1/2 rounded-2xl text-black transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-white md:rounded-4xl shadow-lg z-100 border border-slate-600"
+      className="fixed top-4 font-bold left-1/2 rounded-2xl text-black transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-white md:rounded-4xl shadow-lg z-100 border border-slate-600"
     >
       <div className="flex items-center justify-between px-6 py-4">
         {/* Logo (Left) */}
