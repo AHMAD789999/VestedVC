@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden  mx-auto backdrop-blur-xl bg-slate-800  shadow-lg z-50 border border-slate-700n pt-20 pb-10 font-inter">
+    <footer className="relative overflow-hidden  mx-auto backdrop-blur-xl bg-slate-800  shadow-lg z-50 border border-slate-700n mt-9 pt-20 pb-10 font-inter">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-blue-900/10 blur-3xl"></div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Team from "./components/Team";
+
 const words = ["BUILDING", "GROWTH", "INVESTING", "INNOVATIVE"];
 
 const HeroSection = () => {
@@ -17,42 +18,42 @@ const HeroSection = () => {
   }, []);
 
   return (
-   <>
-    <section className="h-screen pt-[70px] w-full bg-slate-900 text-white flex items-center justify-center px-6">
-      <div className="text-center">
-        {/* Top Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl lg:text-9xl font-bold text-[#e7bb4bea] tracking-tight mb-6"
-        >
-          PARTNER FOR
-        </motion.h1>
+    <>
+      <section className="min-h-screen pt-[70px] w-full bg-slate-900 text-white flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-7xl w-full">
+          {/* Top Heading */}
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#e7bb4bea] tracking-tight mb-6"
+          >
+            PARTNER FOR
+          </motion.h1>
 
-        {/* Auto typing text animation */}
-        <motion.div
-          key={index} // re-render on index change
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.6 }}
-          className="text-5xl md:text-7xl lg:text-10xl font-extrabold text-blue-400 tracking-wide"
-        >
-          {words[index]}
-         
-        </motion.div>
-        <div className="w-full flex justify-center items-center mt-9">
-           <p className=" w-[70%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus iste obcaecati ad minus quae excepturi voluptatum quidem doloremque odio cupiditate!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, debitis et? Libero sapiente molestias ad doloremque! Maiores nobis a in quia modi nemo quis optio, vitae ea perferendis ratione illo cum praesentium quibusdam? Natus fuga rem, accusamus atque quod, iste illo fugiat, temporibus tempora commodi animi sapiente assumenda beatae.
-        </p>
+          {/* Auto Typing Text */}
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold text-blue-400 tracking-wide"
+          >
+            {words[index]}
+          </motion.div>
+
+          {/* Paragraph Section */}
+          <div className="mt-9 px-2 sm:px-4 md:px-6 flex justify-center">
+            <p className="text-base sm:text-lg md:text-1xl lg:text-1xl max-w-3xl text-gray-300 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus iste obcaecati ad minus quae excepturi voluptatum quidem doloremque odio cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, debitis et? Libero sapiente molestias ad doloremque! Maiores nobis a in quia modi nemo quis optio, vitae ea perferendis ratione illo cum praesentium quibusdam? Natus fuga rem, accusamus atque quod, iste illo fugiat, temporibus tempora commodi animi sapiente assumenda beatae.
+            </p>
+          </div>
         </div>
-      </div>
-     
-    </section>
-   <Team/>
-   </>
-  
+      </section>
+
+      <Team />
+    </>
   );
 };
 
