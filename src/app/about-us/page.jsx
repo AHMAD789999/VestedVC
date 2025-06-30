@@ -4,7 +4,6 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { FaLightbulb, FaUsers, FaGem, FaHeart } from 'react-icons/fa';
 import { global } from 'styled-jsx/css';
-import Team from "./components/Team";
 gsap.registerPlugin(ScrollTrigger);
 const iconData = [
   { label: "Innovation", icon: <FaLightbulb />, gradient: "from-blue-500 to-cyan-500" },
@@ -267,7 +266,6 @@ export default function AboutPage() {
 </section>
 
       </div>
-<Team/>
       {/* Call to Action */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 z-0"></div>
