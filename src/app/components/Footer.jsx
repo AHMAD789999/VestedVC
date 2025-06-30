@@ -1,27 +1,43 @@
 'use client'
 
 import { motion } from "framer-motion";
-import { FaTwitter, FaGlobe, FaLinkedin,FaInstagram,  FaArrowUp } from "react-icons/fa";
+import { FaTwitter, FaGlobe, FaLinkedin, FaInstagram, FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link"; // ✅ Added Link import
 
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // ✅ Navigate links
+  const navigateLinks = [
+    { name: "Home", href: "/" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "For Founders", href: "/founders" },
+    { name: "Team", href: "/team" },
+    { name: "Insights", href: "/insights" },
+  ];
+
+  // ✅ Legal links
+  const legalLinks = [
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms", href: "/terms" },
+    { name: "Disclaimer", href: "/disclaimer" },
+    { name: "Cookie Policy", href: "/cookie-policy" },
+    { name: "Compliance", href: "/compliance" },
+  ];
+
   return (
     <footer className="relative overflow-hidden mx-auto backdrop-blur-xl bg-white text-black shadow-lg z-50 border border-slate-700n pt-20 pb-10 text-xl">
-      {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-blue-900/10 blur-3xl"></div>
         <div className="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-purple-900/10 blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Main grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr_1.5fr] gap-12">
-          {/* Brand column */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -40,7 +56,6 @@ const Footer = () => {
               We back bold founders building the future through visionary capital and unparalleled network effects.
             </p>
 
-            {/* Updated Social icons with links */}
             <div className="flex gap-4">
               {[
                 {
@@ -58,19 +73,19 @@ const Footer = () => {
                   color: "bg-purple-500 text-white hover:bg-purple-500/20",
                   link: "https://discord.com/",
                 },
-              {
-    icon: (
-      <Image
-        src="/cb.jpg"
-        alt="Crunchbase"
-        width={34}
-        height={34}
-        className="rounded-full object-cover"
-      />
-    ),
-    color: "text-white hover:bg-purple-500/20",
-    link: "https://www.crunchbase.com/",
-  },
+                {
+                  icon: (
+                    <Image
+                      src="/cb.jpg"
+                      alt="Crunchbase"
+                      width={34}
+                      height={34}
+                      className="rounded-full object-cover"
+                    />
+                  ),
+                  color: "text-white hover:bg-purple-500/20",
+                  link: "https://www.crunchbase.com/",
+                },
               ].map((item, index) => (
                 <motion.a
                   key={index}
@@ -87,8 +102,8 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Navigation */}
-          <motion.div 
+          {/* Navigate */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -98,23 +113,22 @@ const Footer = () => {
               Navigate
             </h3>
             <ul className="space-y-3">
-              {["Our Thesis", "Portfolio", "For Founders", "Team", "Insights"].map((item) => (
-                <li key={item}>
-                  <motion.a
-                    href="#"
-                    whileHover={{ x: 5 }}
+              {navigateLinks.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
                     className="group flex items-center text-black hover:text-blue-600 transition-colors text-xl font-bold"
                   >
                     <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    {item}
-                  </motion.a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </motion.div>
 
           {/* Legal */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -124,23 +138,22 @@ const Footer = () => {
               Legal
             </h3>
             <ul className="space-y-3">
-              {["Privacy Policy", "Terms", "Disclaimer", "Cookie Policy", "Compliance"].map((item) => (
-                <li key={item}>
-                  <motion.a
-                    href="#"
-                    whileHover={{ x: 5 }}
+              {legalLinks.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
                     className="group flex items-center text-black hover:text-blue-600 transition-colors text-lg font-bold"
                   >
                     <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    {item}
-                  </motion.a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </motion.div>
 
           {/* CTA */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -168,8 +181,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        {/* Bottom divider */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -178,7 +190,6 @@ const Footer = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/40 to-transparent"></div>
         </motion.div>
 
-        {/* Footer bottom row */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.p
             initial={{ opacity: 0 }}

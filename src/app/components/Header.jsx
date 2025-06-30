@@ -12,11 +12,12 @@ const Header = () => {
 
   const pages = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about-us" },
-  { name: "Investment Focus", href: "/investment-focus" },
+  { name: "About", href: "/about-us" },
+  { name: "Investment ", href: "/investment-focus" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Founders Hub", href: "/founders-hub" },
+  { name: "Founders", href: "/founders-hub" },
   { name: "Explore Perks", href: "/explore-perks" },
+    { name: "Contact", href: "/contact-us" },
 ];
 
   // ✅ Social links (including image icon)
@@ -53,9 +54,9 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-4 font-bold left-1/2 rounded-2xl text-black transform -translate-x-1/2 w-[95%] mx-auto backdrop-blur-xl bg-white md:rounded-4xl shadow-lg z-100 border border-slate-600"
+      className="fixed top-4 font-bold left-1/2 rounded-2xl text-black transform -translate-x-1/2 w-[99%] mx-auto backdrop-blur-xl bg-white md:rounded-4xl shadow-lg z-100 border border-slate-600"
     >
-      <div className="flex items-center justify-between px-6 py-4">
+      <div className="flex items-center justify-between px-2 py-4">
         {/* Logo (Left) */}
         <motion.div whileHover={{ scale: 1.05 }} className="flex relative top-[-10px] justify-center items-center">
           <Image src="/logo.png" width={120} height={100} alt="VestedVC Logo" />
