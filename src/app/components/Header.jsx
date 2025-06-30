@@ -4,17 +4,19 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTwitter, FaLinkedin, FaInstagram  , FaGithub, FaTimes, FaBars } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const pages = [
-    "About Us",
-    "Investment Focus",
-    "Portfolio",
-    "Founders Hub",
-    "Explore Perks",
-  ];
+  { name: "About Us", href: "/about-us" },
+  { name: "Investment Focus", href: "/investment-focus" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "Founders Hub", href: "/founders-hub" },
+  { name: "Explore Perks", href: "/explore-perks" },
+];
 
   // ✅ Social links (including image icon)
   const socialLinks = [
@@ -65,16 +67,17 @@ const Header = () => {
 
         {/* Pages (Center - Desktop) */}
         <nav className="hidden md:flex items-center space-x-6">
-          {pages.map((item) => (
-            <motion.a
-              key={item}
-              href="#"
-              whileHover={{ scale: 1.05, color: "#3B82F6" }}
-              className="text-black hover:text-blue-400 transition-colors font-['Clash_Display']"
-            >
-              {item}
-            </motion.a>
-          ))}
+         {pages.map((item) => (
+  <Link key={item.name} href={item.href} passHref>
+    <motion.span
+      whileHover={{ scale: 1.05, color: "#3B82F6" }}
+      className="cursor-pointer text-black hover:text-blue-400 transition-colors font-['Clash_Display']"
+    >
+      {item.name}
+    </motion.span>
+  </Link>
+))}
+
           <motion.div
             animate={{
               borderColor: ["#3B82F6", "#60A5FA", "#3B82F6"],
@@ -148,15 +151,16 @@ const Header = () => {
           >
             <div className="px-6 py-4 space-y-4">
               {pages.map((item) => (
-                <motion.a
-                  key={item}
-                  href="#"
-                  whileHover={{ x: 5, color: "#3B82F6" }}
-                  className="block text-black hover:text-blue-400 text-lg transition-colors font-['Clash_Display']"
-                >
-                  {item}
-                </motion.a>
-              ))}
+  <Link key={item.name} href={item.href} passHref>
+    <motion.span
+      whileHover={{ scale: 1.05, color: "#3B82F6" }}
+      className="cursor-pointer text-black hover:text-blue-400 transition-colors font-['Clash_Display']"
+    >
+      {item.name}
+    </motion.span>
+  </Link>
+))}
+
 
               <motion.div
                 animate={{
