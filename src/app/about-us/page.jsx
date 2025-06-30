@@ -107,8 +107,8 @@ export default function AboutPage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
         <div className="container mx-auto px-4 py-16 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="Contact Us">
-              <span className="gradient-text">Contact Us</span>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="Vested VC">
+              <span className="gradient-text">Vested VC</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto">
               We are redefining the future of technology with innovative solutions that transform businesses and empower people.
