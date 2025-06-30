@@ -11,6 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const pages = [
+  { name: "Home", href: "/" },
   { name: "About Us", href: "/about-us" },
   { name: "Investment Focus", href: "/investment-focus" },
   { name: "Portfolio", href: "/portfolio" },
