@@ -13,9 +13,9 @@ const Header = () => {
   const pages = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about-us" },
-  { name: "Investment ", href: "/investment-focus" },
+  { name: "Investment ", href: "/investor" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Founders", href: "/founders-hub" },
+  { name: "Founders", href: "/founder-hub" },
   { name: "Explore Perks", href: "/explore-perks" },
     { name: "Contact", href: "/contact-us" },
 ];
@@ -92,6 +92,7 @@ const Header = () => {
             }}
             className="rounded-lg border-2 border-blue-500"
           >
+            <Link href='/pitch'>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -112,6 +113,7 @@ const Header = () => {
             >
               Pitch Us <span>💡</span>
             </motion.button>
+            </Link>
           </motion.div>
         </nav>
 
