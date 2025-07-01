@@ -491,59 +491,7 @@ const PitchUsPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 border-t border-gray-800 py-12 relative z-10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <h2 className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                Ocentra Ventures
-              </h2>
-              <p className="text-slate-400 mb-6">Investing in visionary founders building the future of technology.</p>
-              <div className="flex space-x-4">
-                {['twitter', 'linkedin', 'instagram', 'youtube'].map((social, index) => (
-                  <a key={index} href="#" className="text-slate-400 hover:text-white transition">
-                    <div className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center">
-                      <span className="font-bold text-sm">{social.charAt(0).toUpperCase()}</span>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                {['Our Portfolio', 'Investment Criteria', 'Team', 'Blog', 'Careers'].map((link, index) => (
-                  <li key={index}><a href="#" className="text-slate-400 hover:text-white transition">{link}</a></li>
-                ))}
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-bold mb-4">Contact</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <FaMapMarkerAlt className="text-blue-400 mt-1 mr-3" />
-                  <span className="text-slate-400">Innovation Center, San Francisco, CA</span>
-                </li>
-                <li className="flex items-start">
-                  <FaEnvelope className="text-purple-400 mt-1 mr-3" />
-                  <span className="text-slate-400">pitch@ocentra.vc</span>
-                </li>
-                <li className="flex items-start">
-                  <FaPhone className="text-cyan-400 mt-1 mr-3" />
-                  <span className="text-slate-400">+1 (415) 555-0123</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-slate-500">
-            <p>© 2023 Ocentra Ventures. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   );
 };
