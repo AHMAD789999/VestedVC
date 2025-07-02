@@ -16,11 +16,10 @@ const Header = () => {
   { name: "Investment ", href: "/investor" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Founders", href: "/founder-hub" },
-  { name: "Explore Perks", href: "/explore-perks" },
+  { name: "Explore Perks", href: "/perk" },
     { name: "Contact", href: "/contact-us" },
 ];
 
-  // ✅ Social links (including image icon)
   const socialLinks = [
     {
       icon: <FaTwitter />,
