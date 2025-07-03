@@ -185,7 +185,66 @@ const HeroSection = () => {
       </section>
         {/* ... (keep existing services section code exactly the same) ... */}
       </section>
-
+ <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Key Investment Sectors</h2>
+            <p className="text-xl text-black max-w-3xl mx-auto">
+              We focus on high-growth industries that are shaping the future of technology and business.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-sky-100 text-sky-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🤖</div>
+              <h3 className="text-lg  text-blue-700 font-bold mb-2">Artificial Intelligence</h3>
+              <p className="text-black">Machine learning, computer vision, and AI applications transforming industries.</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-green-100 text-green-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🌿</div>
+              <h3 className="text-lg text-blue-700 font-bold mb-2">Clean Energy</h3>
+              <p className="text-black">Renewable tech, energy storage, and sustainable infrastructure solutions.</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">💻</div>
+              <h3 className="text-lg  text-blue-700 font-bold mb-2">Enterprise Software</h3>
+              <p className="text-black">Next-generation SaaS, cloud infrastructure, and productivity tools.</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-red-100 text-red-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">❤️</div>
+              <h3 className="text-lg   text-blue-700 font-bold mb-2">HealthTech</h3>
+              <p className="text-black">Digital health, biotech innovations, and medical device advancements.</p>
+            </div>
+             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-sky-100 text-sky-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🤖</div>
+              <h3 className="text-lg  text-blue-700 font-bold mb-2">Artificial Intelligence</h3>
+              <p className="text-black">Machine learning, computer vision, and AI applications transforming industries.</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-green-100 text-green-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🌿</div>
+              <h3 className="text-lg text-blue-700 font-bold mb-2">Clean Energy</h3>
+              <p className="text-black">Renewable tech, energy storage, and sustainable infrastructure solutions.</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">💻</div>
+              <h3 className="text-lg  text-blue-700 font-bold mb-2">Enterprise Software</h3>
+              <p className="text-black">Next-generation SaaS, cloud infrastructure, and productivity tools.</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="bg-red-100 text-red-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">❤️</div>
+              <h3 className="text-lg   text-blue-700 font-bold mb-2">HealthTech</h3>
+              <p className="text-black">Digital health, biotech innovations, and medical device advancements.</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
       {/* Portfolio Showcase Section */}
       <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
