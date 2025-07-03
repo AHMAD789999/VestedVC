@@ -188,8 +188,8 @@ const HeroSection = () => {
  <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Key Investment Sectors</h2>
-            <p className="text-xl text-black max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-4">Key Investment Sectors</h2>
+            <p className="text-xl text-white max-w-3xl mx-auto">
               We focus on high-growth industries that are shaping the future of technology and business.
             </p>
           </div>
