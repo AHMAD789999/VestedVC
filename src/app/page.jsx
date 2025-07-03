@@ -185,7 +185,7 @@ const HeroSection = () => {
       </section>
         {/* ... (keep existing services section code exactly the same) ... */}
       </section>
-  <section className=" bg-slate-900">
+  <section className="py-6 bg-slate-900">
          <section className=" bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
