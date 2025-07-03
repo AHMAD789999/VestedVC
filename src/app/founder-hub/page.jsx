@@ -307,7 +307,26 @@ const FounderHub = () => {
         <title>Founder Hub - Investor Platform</title>
         <meta name="description" content="Discover high-potential startups and connect with visionary founders" />
       </Head>
-
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
+              <div className="container mx-auto px-4 py-16 relative z-10">
+                <div className="text-center max-w-4xl mx-auto">
+                  <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="Founder Hub">
+                    <span className="gradient-text">Founder Hub</span>
+                  </h1>
+                  <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto">
+                    We are redefining the future of technology with innovative solutions that transform businesses and empower people.
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-4">
+                    <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                      Explore Solutions
+                    </button>
+                    <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                      Meet Our Team
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
       {/* Hero Section */}
       <section className="pt-24 pb-20 px-4 sm:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

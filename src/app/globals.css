@@ -149,7 +149,10 @@ body {
             background-clip: text;
             color: transparent;
         }
-        
+           .gradient-tex {
+           
+            color:goldenrod;
+        }
         .section-card {
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(10px);
