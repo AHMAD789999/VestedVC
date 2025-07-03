@@ -376,7 +376,6 @@ const HeroSection = () => {
       </section>
 
       {/* Team Section */}
-      <Team />
     </div>
   );
 };
