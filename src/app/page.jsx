@@ -185,65 +185,67 @@ const HeroSection = () => {
       </section>
         {/* ... (keep existing services section code exactly the same) ... */}
       </section>
- <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">Key Investment Sectors</h2>
-            <p className="text-xl text-white max-w-3xl mx-auto">
-              We focus on high-growth industries that are shaping the future of technology and business.
+  <section className="py-20 bg-slate-900">
+         <section className="py-20 bg-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+            Key focus investment</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-gray-300">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempore nemo similique dolorem consequuntur non corrupti id nesciunt et laborum atque iste soluta deleniti nostrum, fugit libero repellat sint vel veniam sit vitae dignissimos sequi? Assumenda odit quae, vero optio nisi architecto!
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-sky-100 text-sky-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🤖</div>
-              <h3 className="text-lg  text-blue-700 font-bold mb-2">Artificial Intelligence</h3>
-              <p className="text-black">Machine learning, computer vision, and AI applications transforming industries.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-green-100 text-green-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🌿</div>
-              <h3 className="text-lg text-blue-700 font-bold mb-2">Clean Energy</h3>
-              <p className="text-black">Renewable tech, energy storage, and sustainable infrastructure solutions.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">💻</div>
-              <h3 className="text-lg  text-blue-700 font-bold mb-2">Enterprise Software</h3>
-              <p className="text-black">Next-generation SaaS, cloud infrastructure, and productivity tools.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-red-100 text-red-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">❤️</div>
-              <h3 className="text-lg   text-blue-700 font-bold mb-2">HealthTech</h3>
-              <p className="text-black">Digital health, biotech innovations, and medical device advancements.</p>
-            </div>
-             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-sky-100 text-sky-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🤖</div>
-              <h3 className="text-lg  text-blue-700 font-bold mb-2">Artificial Intelligence</h3>
-              <p className="text-black">Machine learning, computer vision, and AI applications transforming industries.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-green-100 text-green-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">🌿</div>
-              <h3 className="text-lg text-blue-700 font-bold mb-2">Clean Energy</h3>
-              <p className="text-black">Renewable tech, energy storage, and sustainable infrastructure solutions.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">💻</div>
-              <h3 className="text-lg  text-blue-700 font-bold mb-2">Enterprise Software</h3>
-              <p className="text-black">Next-generation SaaS, cloud infrastructure, and productivity tools.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-              <div className="bg-red-100 text-red-600 w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-4">❤️</div>
-              <h3 className="text-lg   text-blue-700 font-bold mb-2">HealthTech</h3>
-              <p className="text-black">Digital health, biotech innovations, and medical device advancements.</p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Funding Solutions",
+                description: "Access to venture capital, angel investors, and strategic financing options to fuel your growth.",
+                icon: "💰"
+              },
+              {
+                title: "Growth Strategy",
+                description: "Data-driven approaches to scaling your business, from market expansion to customer acquisition.",
+                icon: "📈"
+              },
+              {
+                title: "Tech Innovation",
+                description: "Cutting-edge technology partnerships and development resources to build competitive advantage.",
+                icon: "🚀"
+              },
+              {
+                title: "Talent Network",
+                description: "Connect with top-tier talent and executive leadership to build your dream team.",
+                icon: "👥"
+              },
+              {
+                title: "Mentorship",
+                description: "Guidance from industry veterans and successful entrepreneurs who've been in your shoes.",
+                icon: "🧠"
+              },
+              {
+                title: "Ecosystem Access",
+                description: "Join our network of partners, customers, and collaborators to accelerate your trajectory.",
+                icon: "🌐"
+              }
+            ].map((service, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: Math.floor(i / 3) * 0.2 }}
+                viewport={{ once: true }}
+                className="bg-slate-800 p-6 rounded-xl hover:bg-slate-700 transition-all duration-300 border border-slate-700 hover:border-blue-400/30"
+              >
+                <div className="text-4xl mb-4">{service.icon}</div>
+                <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                <p className="text-gray-300">{service.description}</p>
+              </motion.div>
+            ))}
           </div>
-          
         </div>
+      </section>
+        {/* ... (keep existing services section code exactly the same) ... */}
       </section>
       {/* Portfolio Showcase Section */}
       <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
