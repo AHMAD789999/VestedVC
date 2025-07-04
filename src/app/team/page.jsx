@@ -90,7 +90,7 @@ const  TeamPage=()=> {
        <section className="py-20 relative overflow-hidden bg-gradient-to-r from-blue-900/20 to-purple-900/20">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Pitch Your Vision?</h2>
+            <h2 className="text-4xl md:text-5xl text-white font-bold mb-6">Ready to Pitch Your Vision?</h2>
             <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
               Join our portfolio of innovative companies transforming industries
             </p>
