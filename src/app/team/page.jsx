@@ -87,20 +87,22 @@ const  TeamPage=()=> {
         </motion.div>
       </section>
 
-      {/* Section 6: Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-indigo-700 to-purple-700 text-white text-center px-6">
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto"
-        >
-          <h2 className="text-4xl font-bold mb-4">Join Us in Building the Future</h2>
-          <p className="text-lg mb-6">Whether you're an investor or a dreamer with a startup idea, our team is ready to collaborate with you.</p>
-          <button className=" bg-white hover:bg-black hover:text-white  font-semibold px-6 py-3 rounded-full shadow-lg text-black transition">Get in Touch</button>
-        </motion.div>
+       <section className="py-20 relative overflow-hidden bg-gradient-to-r from-blue-900/20 to-purple-900/20">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Pitch Your Vision?</h2>
+            <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+              Join our portfolio of innovative companies transforming industries
+            </p>
+            <a href="#pitch-form" className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+              Submit Your Pitch
+            </a>
+            <p className="text-slate-400 mt-6">
+              Have questions? <a href="#" className="text-blue-400 hover:underline">Contact our investment team</a>
+            </p>
+          </div>
+        </div>
       </section>
-
       {/* Section 7: Footer */}
      
     </main>
