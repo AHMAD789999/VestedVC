@@ -57,8 +57,8 @@ const  TeamPage=()=> {
 
       {/* Section 4: Vision & Mission */}
       <section className="py-20 px-6 md:px-20  text-center">
-        <motion.h2 className="text-4xl font-bold mb-6" whileInView={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 0.8 }}>Our Vision & Mission</motion.h2>
-        <p className="max-w-3xl mx-auto text-lg text-black">We envision a future where innovation is accessible to all. Our mission is to empower startups and investors through cutting-edge technology, transparent collaboration, and sustainable solutions.</p>
+        <motion.h2 className="text-4xl  text-white font-bold mb-6" whileInView={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 0.8 }}>Our Vision & Mission</motion.h2>
+        <p className="max-w-3xl mx-auto text-lg text-white">We envision a future where innovation is accessible to all. Our mission is to empower startups and investors through cutting-edge technology, transparent collaboration, and sustainable solutions.</p>
       </section>
 
       {/* Section 5: Achievements */}
