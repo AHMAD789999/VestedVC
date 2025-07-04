@@ -60,7 +60,7 @@ const TeamPage = () => {
               animate="show"
               transition={{ delay: 0.4 }}
             >
-              We are redefining the future of technology with innovative solutions that transform businesses and empower people.
+              We are redefining the Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente rem quisquam accusamus sunt distinctio minus aperiam ipsa ab beatae, incidunt, maiores dignissimos saepe cupiditate. future of technology with innovative solutions that transform businesses and empower people.
             </motion.p>
 
             <motion.div
@@ -88,7 +88,7 @@ const TeamPage = () => {
       </section>
 
       {/* Section 1 */}
-      <section className="min-h-screen flex items-center justify-center text-white relative overflow-hidden">
+      <section className=" flex items-center justify-center text-white relative overflow-hidden">
         <motion.div
           className="text-center px-4 z-10 w-[70%]"
           initial="hidden"
@@ -98,7 +98,7 @@ const TeamPage = () => {
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Meet Our Visionary Team</h1>
           <p className="text-lg md:text-xl pt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ad ullam laudantium ut commodi...
+            Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio obcaecati est, saepe sunt debitis commodi cum, iusto omnis repellat possimus ratione explicabo. Pariatur, voluptas odio? Nihil maxime, rem earum est dolorum mollitia consequuntur modi atque officiis commodi nam non. sit amet consectetur adipisicing elit. Eos ad ullam laudantium ut commodi...
           </p>
         </motion.div>
       </section>
@@ -114,7 +114,7 @@ const TeamPage = () => {
         >
           <h2 className="text-6xl text-white font-bold mb-6">Who We Are</h2>
           <p className="text-lg text-white">
-            We're a diverse team of creatives, developers, and strategists with a shared vision...
+            We're a diverse team Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta alias nobis vitae quia minima omnis dolorum officiis corrupti quidem architecto voluptatem cupiditate id non debitis facilis, distinctio minus rerum sapiente iusto laudantium quam. Impedit pariatur quas veritatis officia ipsum repellat aut eligendi sapiente tempora? of creatives, developers, and strategists with a shared vision...
           </p>
         </motion.div>
       </section>
@@ -139,7 +139,7 @@ const TeamPage = () => {
         >
           <h2 className="text-4xl text-white font-bold mb-6">Our Vision & Mission</h2>
           <p className="max-w-3xl mx-auto text-lg text-white">
-            We envision a future where innovation is accessible to all...
+            We envision   We envision  a future where innovation is accessible to all..  We envision  a future where innovation is accessible to all.. a future where innovation is accessible to all..  We envision  a future where innovation is accessible to all..  We envision  a future where innovation is accessible to all...
           </p>
         </motion.div>
       </section>

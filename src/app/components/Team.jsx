@@ -23,7 +23,71 @@ const team = [
     img: "/team.webp",
     bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
     link: "#",
+  },  {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },  {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },  {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
   },
+    {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },
+    {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },
+
+
+
+    {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },
+    {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },
+    {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },
+    {
+    name: "Zara Khan",
+    role: "Growth Strategist",
+    img: "/team.webp",
+    bio: "Zara specializes in scaling early-stage startups with data-driven marketing strategies. She previously led growth teams at two unicorns and now advises portfolio companies at VestedVC on user acquisition, funnel optimization, and brand positioning. Zara has a background in behavioral psychology and growth design. Her leadership brings structure and speed to startups aiming to scale from MVP to PMF. She's known for building viral loops and applying precision analytics to every stage of the user journey. Her insights have helped startups triple retention within 6 months. She also teaches workshops and actively supports women-led startups.",
+    link: "#",
+  },
+  
 ];
 
 export default function MeetOurTeam() {
