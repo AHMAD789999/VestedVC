@@ -11,7 +11,26 @@ const  TeamPage=()=> {
         <title>Meet Our Team | Visionary Startup</title>
         <meta name="description" content="Discover the minds driving innovation at our startup." />
       </Head>
-
+ <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
+        <div className="container mx-auto px-4 py-16 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="Our Team">
+              <span className="gradient-text">Our Team</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto">
+              We are redefining the future of technology with innovative solutions that transform businesses and empower people.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                Explore Solutions
+              </button>
+              <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                Meet Our Team
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Section 1: Hero Section */}
       <section className="min-h-screen flex items-center justify-center  text-white relative overflow-hidden">
         <motion.div
@@ -37,7 +56,7 @@ const  TeamPage=()=> {
     <Team/>
 
       {/* Section 4: Vision & Mission */}
-      <section className="py-20 px-6 md:px-20 bg-gray-100 text-center">
+      <section className="py-20 px-6 md:px-20  text-center">
         <motion.h2 className="text-4xl font-bold mb-6" whileInView={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 0.8 }}>Our Vision & Mission</motion.h2>
         <p className="max-w-3xl mx-auto text-lg text-black">We envision a future where innovation is accessible to all. Our mission is to empower startups and investors through cutting-edge technology, transparent collaboration, and sustainable solutions.</p>
       </section>
