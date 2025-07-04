@@ -30,13 +30,13 @@ export default function MeetOurTeam() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="px-4 sm:px-6 py-20 mb-20 bg-[#cea439] text-center">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#2253f5]">
+    <section className="px-4 sm:px-6 py-5 mb-20 text-center">
+      {/* <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#2253f5]">
         Our Team
       </h2>
       <p className="text-2xl sm:text-4xl md:text-6xl text-white mt-2 mb-10">
         Meet Our Team
-      </p>
+      </p> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {team.map((member, index) => (
