@@ -13,8 +13,8 @@ const Footer = () => {
   // ✅ Navigate links
   const navigateLinks = [
     { name: "Home", href: "/" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "For Founders", href: "/founders" },
+    { name: "Portfolio", href: "/founders" },
+    { name: "For Founders", href: "/portfolio" },
     { name: "Team", href: "/team" },
     { name: "Insights", href: "/insights" },
   ];
