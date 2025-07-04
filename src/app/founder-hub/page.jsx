@@ -304,14 +304,14 @@ const FounderHub = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <Head>
-        <title>Portfolio</title>
+        <title>Founder Hub - Investor Platform</title>
         <meta name="description" content="Discover high-potential startups and connect with visionary founders" />
       </Head>
 <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
               <div className="container mx-auto px-4 py-16 relative z-10">
                 <div className="text-center max-w-4xl mx-auto">
-                  <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="portfolio">
-                    <span className="gradient-text">Portfolio</span>
+                  <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch" data-text="Founder Hub">
+                    <span className="gradient-text">Founder Hub</span>
                   </h1>
                   <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto">
                     We are redefining the future of technology with innovative solutions that transform businesses and empower people.
